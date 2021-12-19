@@ -1,0 +1,43 @@
+.footerTodolist {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.footerSpan {
+	background-color: transparent;
+	cursor: pointer;
+	padding: 10px;
+	color: #ffffff;
+	border: 2px solid #5C0BFD;
+	border-radius: 10px;
+	font-weight: 700;
+}
+.footerButton {
+	background-color: #5C0BFD;
+	border: none;
+	color: #ffffff;
+	padding: 12px;
+	font-size: 16px;
+	font-weight: 700;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+	.footerButton {
+		font-size: 14px;
+	}
+	.footerSpan {
+		font-size: 14px;
+	}
+}
+@media only screen and (max-width: 600px) {  
+	.footerButton {
+		font-size: 12px;
+		padding: 10px;
+	}
+	.footerSpan {
+		font-size: 12px;
+		padding: 8px;
+	}
+}

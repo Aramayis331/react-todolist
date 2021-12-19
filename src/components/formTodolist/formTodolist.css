@@ -1,0 +1,74 @@
+.formTodolist {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 15px;
+}
+.formInput:-webkit-autofill,
+.formInput:-webkit-autofill:hover,
+.formInput:-webkit-autofill:focus,
+.formInput:-webkit-autofill:active  {
+	font-size: 16px;
+	font-weight: 700;
+	border: 2px solid #5C0BFD !important;
+	-webkit-text-fill-color: #ffffff;
+	-webkit-box-shadow: 0 0 0px 1000px #000000 inset;
+}
+.formInput {
+	border: 2px solid #5C0BFD;
+	outline: none;
+	width: 45%;
+	font-weight: 700;
+	background-color: transparent;
+	cursor: pointer;
+	padding: 10px;
+	font-size: 16px;
+	color: #ffffff;
+	border-radius: 10px 0px 0px 10px;
+}
+.formInput::placeholder {
+	color: #ffffff;
+	font-size: 13px;
+}
+.formButton {
+	background-color: #5C0BFD;
+	border: none;
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 16px;
+	cursor: pointer;
+	padding: 12px;
+	border-radius: 0px 10px 10px 0px;
+}
+.textErrorOff {
+	display: none;
+}
+.textErrorOnn {
+	background-color: transparent;
+	cursor: pointer;
+	color: red;
+	font-weight: 700;
+}
+
+@media only screen and (max-width: 768px) {
+	.formButton, .textErrorOnn {
+		font-size: 14px;
+	}
+	.formInput {
+		width: 50%;
+		font-size: 14px ;
+	}
+}
+@media only screen and (max-width: 600px) { 
+	.formButton {
+		font-size: 12px;
+		padding: 10px;
+	}
+	.formInput {
+		font-size: 12px;
+		padding: 8px;
+	}
+	.textErrorOnn {
+		font-size: 14px;
+	}
+}

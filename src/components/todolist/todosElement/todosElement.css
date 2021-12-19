@@ -1,0 +1,105 @@
+.todosElementFalse {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	background-color: #5C0BFD;
+	margin: 5px 0px;
+	padding: 7px 0px;
+	border-radius: 10px;
+}
+.todosElementTrue {
+	opacity: 0.8;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	background-color: #5C0BFD;
+	margin: 5px 0px;
+	padding: 7px 0px;
+	border-radius: 10px;
+}
+.todoTextFalse {
+	cursor: pointer;
+	font-weight: 700;
+}
+.todoTextTrue {
+	text-decoration: line-through;
+	cursor: pointer;
+	font-weight: 700;
+}
+.todoDelete {
+	font-size: 17px;
+	cursor: pointer;
+	font-weight: 700;
+	margin: 0px 10px 0px 5px;
+}
+
+
+/* checkbox styls */
+.checkboxFalse {
+	margin: 0px 5px 0px 10px;
+	cursor: pointer;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border: 2px solid #ffffff;
+	background: transparent;
+	vertical-align: sub;
+}
+.checkboxTrue{
+	margin: 0px 5px 0px 10px;
+	cursor: pointer;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border: 2px solid #ffffff;
+	background: transparent;
+	vertical-align: sub;
+
+	background-image: url(../../../images/galochka.png);
+	background-repeat: no-repeat;
+	background-position-y: 3px;
+	background-position-x: 1.1px;
+	background-size: 90%;
+}
+
+@media only screen and (max-width: 768px) {
+	.todoTextFalse {
+		font-size: 14px;
+	}
+	.todoTextTrue {
+		font-size: 14px;
+	}
+	.checkboxFalse {
+		width: 15px;
+		height: 15px;
+	}
+	.checkboxTrue{
+		width: 15px;
+		height: 15px;
+	
+		background-position-y: 2px;
+	}
+}
+@media only screen and (max-width: 600px) { 
+	.todoTextFalse {
+		font-size: 12px;
+	}
+	.todoTextTrue {
+		font-size: 12px;
+	}
+	.todoDelete {
+		font-size: 15px;
+	}
+	.checkboxFalse {
+		width: 10px;
+		height: 10px;
+	}
+	.checkboxTrue{
+		width: 10px;
+		height: 10px;
+	
+		background-position-y: 1px;
+	}
+}
