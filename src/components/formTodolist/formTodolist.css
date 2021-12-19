@@ -58,6 +58,12 @@
 		width: 50%;
 		font-size: 14px ;
 	}
+	.formInput:-webkit-autofill,
+	.formInput:-webkit-autofill:hover,
+	.formInput:-webkit-autofill:focus,
+	.formInput:-webkit-autofill:active  {
+		font-size: 14px;
+	}
 }
 @media only screen and (max-width: 600px) { 
 	.formButton {
@@ -70,5 +76,11 @@
 	}
 	.textErrorOnn {
 		font-size: 14px;
+	}
+	.formInput:-webkit-autofill,
+	.formInput:-webkit-autofill:hover,
+	.formInput:-webkit-autofill:focus,
+	.formInput:-webkit-autofill:active  {
+		font-size: 12px;
 	}
 }
